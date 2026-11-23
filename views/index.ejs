@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hallow Quera</h1>
+    <a href="http://localhost:8080/posts/new">crete New post</a>
+
+    <% for(let post of posts){ %>
+        <div class="post">
+            <h3 class="username"><%= post.username %></h3>
+            <p class="content"><%= post.content %></p>
+            <br>
+            <a href="http://localhost:8080/posts/<%=post.id%>">See Full post</a>
+            <a href="http://localhost:8080/posts/<%=post.id%>/edit">Edit</a>
+            <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
+                <br>
+                <button>Delete</button>
+            </form>
+            
+        </div>
+        <hr>
+    <% } %> 
+ 
+    <br>
+    <br>
+    
+</body>
+</html>
