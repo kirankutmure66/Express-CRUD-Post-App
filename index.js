@@ -13,7 +13,7 @@ app.use(methodOverride('_method'))
 let posts = [
     {
         id:uuidv4(),
-        username:"kiran",
+        username:"Kiran",
         content:"Hardwork is important"
 
     },
@@ -21,7 +21,7 @@ let posts = [
     
         id:uuidv4(),
         username:"Rahul",
-        content:"i got forst internship"
+        content:"i got first internship"
 
     },
     {

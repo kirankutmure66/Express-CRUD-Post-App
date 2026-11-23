@@ -7,7 +7,7 @@
 </head>
 <body>
     <h2>Edit Your Post</h2>
-    <p>post id : <%=post.id%></p>
+    <p>post id : <%=post._id%></p>
     <p>post username : <%=post.username%></p>
     <form method="post" action="/posts/new/<%=post.id%>?_method=PATCH">
         <textarea rows="10" cols="30" name="content" id=""><%=post.content%></textarea>
